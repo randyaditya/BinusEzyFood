@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".complete"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:background="#FFC107"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Thank You For Your Order"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        app:cardBackgroundColor="#FFC107"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORDER DETAILS \n-----------------------"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:id="@+id/detail"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="15dp"
+                android:gravity="center|left"
+                android:text="Order"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="21dp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="15dp"
+                android:gravity="center|left"
+                android:text="Price"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="59dp" />
+
+            <TextView
+                android:id="@+id/qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="15dp"
+                android:gravity="left"
+                android:text="QUANTITY"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="-1dp" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="15dp"
+                android:gravity="center|left"
+                android:text="Total"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="59dp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="15dp"
+                android:gravity="left"
+                android:text="DATE     : 01/12/2020"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="-1dp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="15dp"
+                android:gravity="left"
+                android:text="TIME     : 13:15"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="-1dp" />
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="15dp"
+                android:gravity="left"
+                android:text="DURATION : 45:00"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="-1dp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="#FFC107"
+        android:onClick="home"
+        app:srcCompat="@drawable/home"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="320dp"
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="612dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FFC107"
+        android:fontFamily="monospace"
+        android:layout_marginTop="43dp"
+        android:gravity="center"
+        android:text="Binus EzyFood"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
